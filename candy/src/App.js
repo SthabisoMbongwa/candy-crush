@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 
 const width = 8;
 
@@ -23,6 +23,9 @@ const  App =  () => {
     setCurrentColorArrangement(randomColorArrangement)
   }
 
+  useEffect(() => {
+    createBoard()
+  }, [])
 
   return (
     <div>
