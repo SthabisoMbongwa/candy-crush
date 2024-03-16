@@ -11,7 +11,16 @@ const candyColors = [
   'yellow'
 ]
 
-function App() {
+const  App =  () => {
+
+  const createBoard = () => {
+    for (let i = 0; i < width * width; i++){
+      const randomColor = candyColors[Math.floor(Math.random() * candyColors.length)]
+    }
+
+  }
+
+
   return (
     <div>
 
@@ -21,3 +30,4 @@ function App() {
 }
 
 export default App;
+ 
